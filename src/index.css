@@ -2,6 +2,7 @@
 
 :root {
   --color-main-blue: #2a2a72;
+  --color-secondary-blue: #5b5bf7;
   --color-button-blue: #009ffd;
 }
 
@@ -9,5 +10,8 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  ;
+}
+
+body {
+  background-color: #F4F3F4;
 }

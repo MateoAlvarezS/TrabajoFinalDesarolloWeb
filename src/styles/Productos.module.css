@@ -1,0 +1,69 @@
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+}
+
+.contenido-titulo {
+  font-size: 2rem;
+  margin-block: 1.5rem;
+}
+
+.contenido-titulo span {
+  color: var(--color-main-blue);
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  justify-items: center;
+  column-gap: 3rem;
+  row-gap: 1rem;
+}
+
+@media (min-width: 560px) {
+  .productos {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 860px) {
+  .productos {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .productos {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+  }
+}
+
+.producto {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.producto-titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.producto-precio {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--color-secondary-blue);
+}
+
+.producto img {
+  width: 12rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+}

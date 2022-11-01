@@ -1,10 +1,12 @@
-import Navbar from "./components/ui/Navbar"
+import Productos from "./components/Productos";
+import Navbar from "./components/Navbar"
 
 function App() {
   return (
-    <div className="App">
+    <>
        <Navbar/>
-    </div>
+       <Productos/>
+    </>
   );
 }
 
